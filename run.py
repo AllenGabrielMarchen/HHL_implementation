@@ -37,7 +37,7 @@ def main(A,b,backend,shots,t,n_l,delta):
 
     My_HHL_result = hhl.My_HHL(CU,b,n_l,n_b,backend,delta,shots,A,details = True,chevyshev = False)
     print("\n")
-    qiskit_result = hhl.qiskit_HHL(A,b)
+    qiskit_result = hhl.qiskit_HHL(A,b,backend)
     print("\n")
     classical_result = hhl.classical_HHL(A,b)
     print("\n")
